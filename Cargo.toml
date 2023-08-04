@@ -4,8 +4,10 @@ version = "0.1.0"
 edition = "2021"
 description = "A tiny DHCP server for lab/testing use, blazing fast, and compact. NOT ment for large scales."
 repository = "https://github.com/Mpult/nano-dhcp"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dhcproto = "0.9.0"
+tokio = {version = "1.29.1", features = ["full"]}
